@@ -51,7 +51,7 @@ def merge_data(a,b)
   result = []
   b[0].each do |key, val|
     a.each do |ele|
-      if ele.value? == key
+      if ele[:first_name] == key
         result << ele.merge(key)
       end
     end
