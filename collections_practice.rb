@@ -53,6 +53,7 @@ def merge_data(a,b)
     a.each do |ele|
       if ele.value == key
         result << ele.merge(key)
+      end
     end
   end
   
