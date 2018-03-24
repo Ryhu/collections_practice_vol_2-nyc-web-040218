@@ -64,5 +64,5 @@ end
 
 
 def find_cool(cool)
-  
+  return cool
 end
