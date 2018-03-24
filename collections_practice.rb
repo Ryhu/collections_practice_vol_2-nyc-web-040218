@@ -86,5 +86,5 @@ def organize_schools(arr)
     end
   end
   
-  arr
+  result
 end
