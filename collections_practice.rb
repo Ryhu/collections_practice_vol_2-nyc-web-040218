@@ -79,7 +79,9 @@ end
 def organize_schools(arr)
   result = {}
   arr.each do |key, val|
-    if result.has_key?(val[:location])
+    if !result.has_key?(val[:location])
+      result 
+    end
   end
   
   arr
