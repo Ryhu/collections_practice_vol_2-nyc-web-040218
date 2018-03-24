@@ -64,5 +64,13 @@ end
 
 
 def find_cool(cool)
-  return cool
+  result = []
+  
+  cool.each do |ele|
+    if ele[temperature] == "cool"
+      result << ele
+    end
+  end
+  
+  return result
 end
