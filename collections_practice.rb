@@ -50,9 +50,12 @@ end
 def merge_data(a,b)
   result = []
   b[0].each do |key, val|
-    
+    a.each do |ele|
+      if ele.value == key
+        result << ele.merge(key)
+    end
   end
   
   
-  return a
+  return result
 end
