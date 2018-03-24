@@ -81,6 +81,8 @@ def organize_schools(arr)
   arr.each do |key, val|
     if !result.has_key?(val[:location])
       result[val[:location]] = [key]
+    else
+      result[val[:location]] << key
     end
   end
   
